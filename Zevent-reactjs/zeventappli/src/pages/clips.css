@@ -1,0 +1,555 @@
+.container {
+
+    /* Toute la largeur du parent (<body>) */
+    width: 100%;
+
+    /* Pas de hauteur maximum => on positionne le header en sticky et il ne doit pas se débloquer  */
+    max-height: none;
+    
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    background-color: var(--primaryColor);
+}
+
+main {
+    width: 100%;
+
+    /* Pas de hauteur maximum pour que la sibeBar reste en place avec sticky */
+    max-height: none;
+
+    /* On ajoute un marge de 10px autour du contenu de la page */
+    margin: 0 10px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    /* On sépare de 30 px la sidebar "sidebarContainer" du container droit "rightGlobalContainer */
+    gap: 30px;
+}
+
+/* paramétrer une transition pour tous les boutons  */
+button {
+    transition-duration: 0.2s;
+}
+
+.sidebarContainer {
+    /* environ 15 % de la largeur du parent main */
+    min-width: 250px;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.sidebar {
+
+    /* 100% de la largeur du parent sidebarContainer */
+    width: 100%;
+    height: 730px;
+
+    /* Décaler vers le bas le menu sidebar par rapport au sidebarContainer */
+    margin-top: 15px;
+
+    background-color: var(--dark);
+
+    /* Ajout d'une ombre de couleur grise tout autour du container */
+    box-shadow: inset 0px 0px 15px 10px var(--lightGrey);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+    align-items: center;
+
+    font-family: var(--fontWrite);
+    font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px var(--dark);
+
+    position: sticky;
+    top: 135px;
+
+    z-index: 1;
+}
+
+.sidebarLinks {
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebarLinks ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.sidebarLinks ul li {
+    width: 100%;
+}
+
+.sidebarLinks ul li a img {
+    width: 30px;
+    height: 30px;
+
+    color: var(--tertiaryColor);
+
+    filter: drop-shadow(1px 1px 1px var(--dark));
+}
+
+.sidebarLinks ul li a {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: var(--tertiaryColor);
+
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Décaler légèrement l'îcone par rapport au texte */
+    gap: 10px;
+}
+
+.sidebarLinks ul li a:hover {
+    background-color: var(--tertiaryColor);
+    color: var(--secondaryColor);
+}
+
+.sidebarButtons {
+
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+
+.sidebarButtons ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.sidebarButtons ul li {
+    width: 80%;
+}
+
+.sidebarButtons button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark);
+    color: var(--tertiaryColor);
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+}
+
+.sidebarButtons button:hover {
+    background-color: var(--tertiaryColor);
+    color: var(--secondaryColor);
+}
+
+/* Container droit global */
+.rightGlobalContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* bordure pour tous les enfants */
+    gap: 30px;
+
+}
+
+/* Barre de sélection de la période ( "tout le week-end", "vendredi", "samedi", "dimanche") */
+.rightGlobalContainer .daysButtonsContainer {
+    width: 95%;
+    
+    background-color: var(--extraBlack);
+
+    gap: 15px;
+    padding: 10px 1.5%;
+
+    /* On pousse à gauche la barre de sélection des jours */
+    margin-right: auto;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    /* On laisse le container en place lorsqu'on scroll */
+    position: sticky;
+    top: 120px;
+
+    z-index: 1;
+}
+
+.rightGlobalContainer .daysButtonsContainer {
+    flex-wrap: wrap;
+}
+
+.rightGlobalContainer .daysButtonsContainer input[type="radio"].radioButton {
+    display: none;
+}
+
+.rightGlobalContainer .daysButtonsContainer input[type="radio"].radioButton:checked+label {
+    background-color: var(--secondaryColor);
+}
+
+.rightGlobalContainer .daysButtonsContainer input[type="radio"].radioButton+label {
+    height: 50px;
+    border-radius: 10px;
+
+    color: var(--tertiaryColor);
+
+    font-family: var(--fontWrite);
+    font-size: 0.9em;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titre "Les plues vues" */
+.rightGlobalContainer h1 {
+    text-align: center;
+
+    color: var(--tertiaryColor);
+
+    font-family: var(--fontFamilyTitle);
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.rightGlobalContainer .nbPages {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--extraBlack);
+    color: var(--tertiaryColor);
+
+    /* Ajout d'une ombre de couleur grise tout autour du container */
+    box-shadow: 0px 0px 5px 1px var(--lightGrey);
+
+    border-radius: 5px;
+}
+
+/* Grid qui contient tous les clips */
+.containerAllClips {
+    /* 100% de la largeur du parent */
+    width: 100%;
+
+    background-color: var(--primaryColor);
+
+    /* Active la méthode Grid */
+    display: grid;
+
+    /* Goutière de 20px entre chaque enfant */
+    gap: 20px;
+
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    /*  
+        On veut créer 5 clips par lignes de 255px minimum.
+        On a besoin de 4 gouttières de 20px pour séparer les colonnes.
+    */
+
+    margin-top:20px;
+
+    justify-content: center;
+}
+
+
+/* Définition des propriétés d'un article ( = 1 clip ) */
+
+article {
+    width: 100%;
+
+    background-color: var(--dark);
+
+    /* On définit la hauteur d'un article */
+    height: 370px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-radius: 20px;
+
+    font-family: var(--fontWrite);
+    font-size: 0.75em;
+}
+
+article:hover {
+    background-color: var(--secondaryColor);
+
+    /* Ajout d'une ombre de couleur verte tout autour du container */
+    box-shadow: 0px 0px 5px 1px var(--secondaryColor);
+}
+
+article a {
+    width: 100%;
+    height: 100%;
+
+    color: var(--tertiaryColor);
+}
+
+article a:hover {
+    color: var(--dark);
+}
+
+article video {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+article .infos {
+    margin-top: 15px;
+
+    display: flex;
+
+    /* Les enfants se collent au centre, l'un contre l'autre */
+    justify-content: center;
+
+    /* on les écarte de 10px */
+    gap: 10px;
+}
+
+article .infos .nbView,
+article .infos .dateHour {
+    padding: 5px;
+    border: 1px solid;
+}
+
+article .videoTitle {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    padding: 0 15px;
+}
+
+article .videoTitle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+article .videoTitle h4 {
+    
+    font-family: var(--fontFamilyTitle);
+    font-size: 1.6em;
+    
+}
+
+article .streamerName {
+    margin-top: 15px;
+    padding: 0 15px;
+
+    font-weight: lighter;
+
+    font-size: 1.4em;
+}
+
+/* La sidebar est affichée lorsqu'on clic sur le menu Burger*/
+.sidebarContainer.active {
+    /* width: 100%; */
+    display: flex;
+}
+
+/* Propriétés du menu Burger de la sidebar */
+
+.daysButtonsContainer .burger2Container
+{   
+    /* On agrandit la largeur du container du burger pour correspondre
+        à l'affichage mobile en 280px */
+    width: 30px;  
+    height: 25px;
+
+    /* On n'affiche pas l'icone du burger par défaut */
+    display: none;
+      
+}
+
+.daysButtonsContainer .burger2Container button {
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url('/public/images/hamburger.svg');
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-style: none;
+}
+
+.daysButtonsContainer .burger2Container button.active {
+    
+    background-image: url('/public/images/close.svg');
+    
+}
+
+
+/* Media queries de la page  */
+
+/* Lorsque la largeur de l'écran est < à 380px */
+@media all and (max-width:380px) {
+
+    /* On enlève les icônes */
+    .lineTop .navLineTopIcones {
+        display: none;
+    }
+
+    /* On affiche le menu burger */
+    .lineTop .burgerContainer
+    {
+        display: block;
+    }
+
+    /* On positionne le logo à gauche de l'écran */
+    .logo img {
+        position: absolute;
+        left: 10px;
+    }
+
+    /* Redimensionner navLineTop et sa liste pour qu'elle s'affiche en colonne */
+    .lineTop .navLineTop {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: var(--extraBlack);
+        Z-index: 3;
+
+        /* On n'affiche pas la liste du menu nav par défaut en mode mobile */
+        display: none;
+    }
+
+    .lineTop .navLineTop ul {
+        width: 100%;
+        height: 100%;
+
+        /* On passe en colonnes pour que la liste s'affiche verticalement */
+        flex-direction: column;
+
+        justify-content: space-evenly;
+    }
+
+    /* Quand on clic sur le Menu Burger on déroule la liste */
+    .lineTop .navLineTop.active {
+        display: block;
+    }
+}
+
+/* Quand la largeur de l'écran est < à 570px ( entre 280px et 570px)
+   La sidebar disparait et le menu burger du container des jours apparait.
+    La sidebar est redimensionnée pour que la liste s'affiche sous le menu burger */
+
+@media all and (max-width: 570px) {
+
+    /* on affiche le menu Burger de la sidebar */
+    .daysButtonsContainer .burger2Container {
+        display: block;
+    }
+
+    /* On repositionne et on redimensionne la sidebar et son container */
+    .sidebarContainer {
+
+        position: fixed;
+        top: 245px;
+        left: 0;
+
+        width: 100%;
+
+        /* On n'affiche pas la sidebar par défaut en mode mobile */
+        display: none;
+    }
+
+    .sidebar {
+        width: 95%;
+        height: 550px;
+        margin: 15px auto;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebarLinks ul {
+
+        gap: 15px;
+    }
+}
+
+/* quand la largeur de l'écran est < à 650px on aligne les icônes et le panier à droite */
+@media all and (max-width:650px) {
+
+    .lineTop {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* On positionne le logo juste avant le la 1ère icône de la liste */
+    .logo img {
+        position: absolute;
+        right: 200px;
+    }
+
+}
+
+/* Quand l'écran est < à 700px, On réorganise les items days dans leur container.
+       Au départ alignés à gauche sur une ligne, il faut ensuite les centrer 
+       lorsque le container passe à 2 lignes et plus  */
+@media all and (max-width:700px) {
+
+    .daysButtonsContainer {
+
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 135px;
+        padding: 0 2%;
+        margin: auto;
+    }
+}
+
+/* Quand la largeur de l'écran est > à 380px et < à 900px on remplace les noms de la barre de 
+        navigation du header par des icônes */
+@media all and (min-width:380px) and (max-width:900px) {
+
+    /* On n'affiche plus la liste de navigation avec le texte */
+    .lineTop .navLineTop {
+        display: none;
+    }
+
+    /* on active la navbar des icônes */
+    .lineTop .navLineTopIcones {
+        display: flex;
+    }
+}

@@ -1,0 +1,194 @@
+header {
+    width: 100%;
+    min-height: 80px;
+  
+    font-size: 0.8em;
+    font-weight: 700;
+    font-family: var(--fontWrite);
+  
+    display: flex;
+    flex-wrap: wrap;
+  
+    /* propriété transparent utilisée pour laisser apparaître la couleur du background de la page */
+    background-color: transparent;
+  
+    /* Propriété blur pour flouter ce qui passe sous le header lors du scroll */
+    backdrop-filter: blur(4px);
+  
+    /* Ajout d'une ombre de couleur grise sous le container header */
+    box-shadow: 0px 10px 10px var(--lightGrey);
+  
+    /* Le header doit rester afficher lorsqu'on scroll */
+    position: sticky;
+    top: 0;
+  
+    /* On place le header au dessus des autres éléments */
+    z-index: 3;
+  
+  }
+  
+  /* Définition des propiétés de tous les liens de la page */
+  a {
+    text-decoration: none;
+    /* color: var(--tertiaryColor); */
+  }
+  
+  /* Enlever toutes les puces des listes de la page */
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Propriétés de la bannière */
+  .banner {
+    width: 100%;
+    min-height: 25px;
+  
+    background-color: var(--secondaryColor);
+    color: var(--tertiaryColor);
+    
+    font-size: 1.3em ;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-wrap: wrap;
+  
+    padding: 5px 20px;
+  }
+  .banner p 
+  {
+    filter: drop-shadow(1px 1px 1px var(--dark));
+    text-align: center;
+  }
+  
+  /* Container des liens de navigation et du panier */
+  .lineTop {
+    width: 100%;
+    height: 50px;
+  
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+  
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Menu navigation de la 1ère ligne */
+  .navLineTop ul {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navLineTop ul li a {
+    color: var(--tertiaryColor);
+  }
+  
+  .panier img {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+  
+  /* Container logo Zevent */
+  .logo {
+    width: 100%;
+  
+    /* Définir une hauteur de 0 pour centrer correctement le logo 
+       et placer le panier à droite avec un margin-left auto */
+    height: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    z-index: 1;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 60px;
+  
+    margin-bottom: 25px;
+  }
+  
+  /* Container des liens des réseaux sociaux */
+  .navLineBottom {
+    width: 100%;
+    height: 30px;
+    background-color: var(--extraBlack);
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .navLineBottom ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    gap: 10px;
+  }
+  
+  .navLineBottom img {
+    width: 20px;
+    height: 20px;
+    background-color: var(--tertiaryColor);
+  }
+  
+  
+  /* Propriétés du menu burger du header */
+  
+  .lineTop .burgerContainer
+  {   
+    /* On n'affiche pas l'icone du burger par défaut */
+    display: none;    
+  }
+  
+  .lineTop .burgerContainer button {
+  
+    width: 30px;
+    height: 30px;
+  
+    background-image: url('/public/images/hamburger.svg');
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    border-style: none;
+  }
+  
+  .lineTop .burgerContainer button.active {
+    
+    background-image: url('/public/images/close.svg');
+    
+  }
+  
+  /* Menu des icônes */
+  .navLineTopIcones ul {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navLineTopIcones ul li a {
+    color: var(--tertiaryColor);
+  }
+  
+  /* On n'affiche pas les icônes par défaut */
+  .navLineTopIcones {
+    display: none;
+  }
+  
+  .navLineTopIcones img {
+    width: 30px;
+    height: 30px
+  }
