@@ -45,7 +45,9 @@ function Boutique() {
            
 
             <section class="allArticlesContainer">
+
                 <article>
+
                     <h2>Tee-shirt Bio - officiel ZEnd 2022</h2>
 
                     <div class="articleBloc1">
@@ -74,31 +76,31 @@ function Boutique() {
 
                                 <div class="selectSize">
                                     <div class="inputSize">
-                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXS">
+                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXS"></input>
                                         <label class="labelSize" for="sizeXS">XS</label>
                                     </div>
                                     <div class="inputSize">
-                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeS">
+                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeS"></input>
                                         <label class="labelSize" for="sizeS">S</label>
                                     </div>
                                     <div class="inputSize">
-                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeM">
+                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeM"></input>
                                         <label class="labelSize" for="sizeM">M</label>
                                     </div>
                                     <div class="inputSize">
-                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeL">
+                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeL"></input>
                                         <label class="labelSize" for="sizeL">L</label>
                                     </div>
                                     <div class="inputSize">
-                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXL">
+                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXL"></input>
                                         <label class="labelSize" for="sizeXL">XL</label>
                                     </div>
                                     <div class="inputSize">
-                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXXL">
+                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXXL"></input>
                                         <label class="labelSize" for="sizeXXL">XXL</label>
                                     </div>
                                     <div class="inputSize">
-                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXXXL">
+                                        <input type="radio" name="selectedSize" class="radioButton" id="sizeXXXL"></input>
                                         <label class="labelSize" for="sizeXXXL">XXXL</label>
                                     </div>
                                 </div>
@@ -109,7 +111,7 @@ function Boutique() {
                                 <h3>Quantité</h3>
                                 <div class="quantity quantity1">
                                     <button type="button" class="decrease"></button>
-                                    <input type="number" class="quantityOrdered" value="1" readonly>
+                                    <input type="number" class="quantityOrdered" value="1" readonly></input>
                                     <button type="button" class="increase"></button>
                                 </div>
                                 <button type="button" class="orderNow">Acheter maintenant</button>
@@ -127,21 +129,21 @@ function Boutique() {
                                 <span>&nbsp;Composition et Fabrication</span>
                             </button>
                             <div class="detail item1">
-                                <br>100% coton biologique - 170g<br><br>
+                                <br></br>100% coton biologique - 170g<br></br><br></br>
                                 Ce tee-shirt est certifié Oeko-Tex Standard 100, Fairwear, GOTS, PETA Approved
-                                vegan<br><br>
+                                vegan<br></br><br></br>
                                 Nous sommes convaincus, comme vous, qu'il est important d'avoir de la transparence et
                                 une traçabilité sur les produits que nous achetons. Merci d'avoir cliqué pour en savoir
-                                plus.<br><br>
+                                plus.<br></br><br></br>
                                 Les t-shirts sont fabriqués en coton bio et ont reçu le label GOTS. Ils ont été montés
                                 dans des usines labellisées FairWear au Bengladesh puis imprimés dans un atelier GOTS à
-                                Bidart en France.<br><br>
+                                Bidart en France.<br></br><br></br>
                                 Si vous voulez en savoir plus sur notre partenaire Stanley Stella qui produit nos
                                 tee-shirts noirs, vous pouvez aller sur ce site : &nbsp;<a href=""
-                                    class="link">stanleystalla.com</a> &nbsp;ou télécharger leur<br>
-                                <a href="" class="link">Social Report 2021</a><br><br>
+                                    class="link">stanleystalla.com</a> &nbsp;ou télécharger leur<br></br>
+                                <a href="" class="link">Social Report 2021</a><br></br><br></br>
                                 Pour en savoir plus sur le label GOTS :&nbsp; <a href=""
-                                    class="link">labelinfo.be</a><br><br>
+                                    class="link">labelinfo.be</a><br></br><br></br>
                             </div>
                         </div>
 
@@ -151,9 +153,9 @@ function Boutique() {
                                 <span>&nbsp;Délais de livraison</span>
                             </button>
                             <div class="detail item2">
-                                <br>Les t-shirt seront expédiés à partir du 3 Octobre.<br><br>
+                                <br></br>Les t-shirt seront expédiés à partir du 3 Octobre.<br></br><br></br>
                                 Le planning de production des produits de la boutique ZEvent est consultable &lt;<a
-                                    href="" class="link">ici</a>&gt;<br><br>
+                                    href="" class="link">ici</a>&gt;<br></br><br></br>
                             </div>
                         </div>
 
@@ -163,9 +165,9 @@ function Boutique() {
                                 <span>&nbsp;Taille</span>
                             </button>
                             <div class="detail item3">
-                                <br>Ce t-shirt est unisexe !<br><br>
-                                Pour les hommes : prenez votre taille habituelle<br><br>
-                                Pour les femmes : prenez une taille en dessous<br><br>
+                                <br></br>Ce t-shirt est unisexe !<br></br><br></br>
+                                Pour les hommes : prenez votre taille habituelle<br></br><br></br>
+                                Pour les femmes : prenez une taille en dessous<br></br><br></br>
                             </div>
                         </div>
 
@@ -175,7 +177,7 @@ function Boutique() {
                                 <span>&nbsp;Lavage</span>
                             </button>
                             <div class="detail item4">
-                                <br>Laver à 30°C retourné. Ne pas mettre au sèche-linge. Repasser à l'envers.<br><br>
+                                <br></br>Laver à 30°C retourné. Ne pas mettre au sèche-linge. Repasser à l'envers.<br></br><br></br>
                             </div>
                         </div>
 
@@ -207,7 +209,7 @@ function Boutique() {
 
                             <h3>Précommande</h3>
 
-                            <p>Photo non contarctuelle</p>
+                            <p>Photo non contractuelle</p>
 
                             <p>&euro; 60,00 taxes incluses</p>
 
@@ -217,7 +219,7 @@ function Boutique() {
                                 <h3>Quantité</h3>
                                 <div class="quantity quantity2">
                                     <button type="button" class="decrease"></button>
-                                    <input type="number" class="quantityOrdered" value="1" readonly>
+                                    <input type="number" class="quantityOrdered" value="1" readonly></input>
                                     <button type="button" class="increase"></button>
                                 </div>
                                 <button type="button" class="orderNow">Acheter maintenant</button>
@@ -235,7 +237,7 @@ function Boutique() {
                                 <span>&nbsp;Dimension</span>
                             </button>
                             <div class="detail item1">
-                                <br>Taille 50x50 cm<br><br>
+                                <br></br>Taille 50x50 cm<br></br><br></br>
                             </div>
                         </div>
 
@@ -245,7 +247,7 @@ function Boutique() {
                                 <span>&nbsp;Fabrication</span>
                             </button>
                             <div class="detail item2">
-                                <br>Imprimé en France FR<br><br>
+                                <br></br>Imprimé en France FR<br></br><br></br>
                             </div>
                         </div>
 
@@ -255,11 +257,11 @@ function Boutique() {
                                 <span>&nbsp;Impression</span>
                             </button>
                             <div class="detail item3">
-                                <br>Impression à plat directement Dibond(fines plaques d'aluminium) avec des encres 100%
+                                <br></br>Impression à plat directement Dibond(fines plaques d'aluminium) avec des encres 100%
                                 écologiques et
                                 en haute définition. Cette oeuvre est fabriquée avec 2 acrroches aux dos pour pouvoir
                                 l'exposer
-                                directement sur son mur.<br><br>
+                                directement sur son mur.<br></br><br></br>
                             </div>
                         </div>
 
@@ -269,9 +271,9 @@ function Boutique() {
                                 <span>&nbsp;Design exclusif</span>
                             </button>
                             <div class="detail item4">
-                                <br>Nous attendons la fin du ZEVENT PLACE pour réaliser l'impression de cette oeuvre
+                                <br></br>Nous attendons la fin du ZEVENT PLACE pour réaliser l'impression de cette oeuvre
                                 disponible
-                                uniquement sur la boutique ZEvent.<br><br>
+                                uniquement sur la boutique ZEvent.<br></br><br></br>
                             </div>
                         </div>
 
@@ -311,7 +313,7 @@ function Boutique() {
                                 <h3>Quantité</h3>
                                 <div class="quantity quantity3">
                                     <button type="button" class="decrease"></button>
-                                    <input type="number" class="quantityOrdered" value="1" readonly>
+                                    <input type="number" class="quantityOrdered" value="1" readonly></input>
                                     <button type="button" class="increase"></button>
                                 </div>
                                 <button type="button" class="orderNow">Acheter maintenant</button>
@@ -329,7 +331,7 @@ function Boutique() {
                                 <span>&nbsp;Délais de livraison</span>
                             </button>
                             <div class="detail item1">
-                                <br>Début des expéditions prévu à partir du 28 septembre.<br><br>
+                                <br></br>Début des expéditions prévu à partir du 28 septembre.<br></br><br></br>
                             </div>
                         </div>
 
@@ -339,7 +341,7 @@ function Boutique() {
                                 <span>&nbsp;Dimension</span>
                             </button>
                             <div class="detail item2">
-                                <br>La plaque mesure 18 x 13 cm<br><br>
+                                <br></br>La plaque mesure 18 x 13 cm<br></br><br></br>
                             </div>
                         </div>
 
@@ -349,8 +351,8 @@ function Boutique() {
                                 <span>&nbsp;Mise en panier</span>
                             </button>
                             <div class="detail item3">
-                                <br>Tirage numéroté et limité à 3 000 exemplaires (limité à 1 exemplaire par
-                                commande)<br><br>
+                                <br></br>Tirage numéroté et limité à 3 000 exemplaires (limité à 1 exemplaire par
+                                commande)<br></br><br></br>
                             </div>
                         </div>
 
@@ -360,7 +362,7 @@ function Boutique() {
                                 <span>&nbsp;Fabrication</span>
                             </button>
                             <div class="detail item4">
-                                <br>Ce produit est fabriqué sur-mesure en Italie<br><br>
+                                <br></br>Ce produit est fabriqué sur-mesure en Italie<br></br><br></br>
                             </div>
                         </div>
 
@@ -394,8 +396,9 @@ function Boutique() {
                                 <a href="" class="link">En savoir plus</a>&nbsp;
                                 <img src="../ressources/images/arrow.svg" alt="icône direction"></img>
                             </div>
-
+                        </div>
                     </section>
+
                     <section class="associationCard">
 
                         <div class="containerImg">
@@ -411,6 +414,7 @@ function Boutique() {
                                 <a href="" class="link">En savoir plus</a>&nbsp;
                                 <img src="../ressources/images/arrow.svg" alt="icône direction"></img>
                             </div>
+                        </div>
 
                     </section>
                     <section class="associationCard">
@@ -430,8 +434,9 @@ function Boutique() {
                                 <a href="" class="link">En savoir plus</a>&nbsp;
                                 <img src="../ressources/images/arrow.svg" alt="icône direction"></img>
                             </div>
-
+                        </div>
                     </section>
+
                     <section class="associationCard">
 
                         <div class="containerImg">
@@ -448,7 +453,7 @@ function Boutique() {
                                 <a href="" class="link">En savoir plus</a>&nbsp;
                                 <img src="../ressources/images/arrow.svg" alt="icône direction"></img>
                             </div>
-
+                        </div>
                     </section>
                 </div>
 
@@ -531,6 +536,7 @@ function Boutique() {
 
         </footer>
     </div>
+
     </>
    )                                                                                                                      
   }
