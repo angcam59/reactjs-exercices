@@ -1,0 +1,839 @@
+.containerPageBoutique {
+
+    /* Toute la hauteur du parent (<body>) */
+    width: 100%;
+
+    /* Pas de hauteur maximum => on positionne le header en sticky et il ne doit pas se débloquer  */
+    max-height: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: var(--primaryColor);
+
+    /* couleur du texte pour la page */
+    color: var(--tertiaryColor);
+
+    gap: 20px;
+
+    font-family: 'Caveat', cursive;
+}
+
+main {
+
+    width: 100%;
+
+    /* Pas de hauteur maximum pour que le header reste en place avec sticky */
+    max-height: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+    margin: 0 auto;
+    /* padding: 0 10px; */
+}
+
+
+/* Propriétés de la bannière titre H1 */
+h1 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 img {
+    width: 80%;
+}
+
+h2 {
+
+    color: var(--secondaryColor);
+    text-align: center;
+    font-family: var(--fontFamilyTitle);
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+h3 {
+    font-family: var(--fontFamilyTitle);
+    font-size: 2.6em;
+}
+
+h4 {
+    font-size: 0.9em;
+    font-family: var(--fontFamilyTitle);
+}
+
+p, label{
+    font-family: var(--fontWrite);
+    font-size: 1em;
+}
+
+/* Propriétés des articles */
+
+.allArticlesContainer {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: var(--primaryColor);
+        
+    gap: 70px;
+}
+
+article {
+
+    width: 700px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+    gap: 10px;
+
+    margin: 0 auto;
+}
+
+/* Propriétés des blocs Caroussel et Précommande */
+
+.articleBloc1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    /* flex-wrap: wrap; */
+}
+
+
+/* Propriétés du bloc "Précommande" */
+.articlePreOrder {
+
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px
+}
+
+/* Bloc utilisé pour remplacé le bloc des tailles */
+.articlePreOrder .spaceBloc10px {
+    height: 30px;
+}
+
+/* Bloc utilisé pour remplacé le bloc des tailles */
+.articlePreOrder .spaceBloc70px {
+    height: 70px;
+}
+
+.articlePreOrder h4 {
+    width: 100%;
+}
+
+.articlePreOrder .size {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.articlePreOrder .size .selectSize {
+    font-size: 0.8em;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+    row-gap: 20px;
+    column-gap: 10px;
+
+    /* justify-content: center; */
+}
+
+/* Change le pointeur de la souris au survol des tailles */
+.articlePreOrder .size .selectSize .inputSize input[type="radio"].radioButton:hover+label {
+    cursor: pointer;
+}
+
+.articlePreOrder .size .selectSize .inputSize input[type="radio"].radioButton {
+    display: none;
+}
+
+.articlePreOrder .size .selectSize .inputSize input[type="radio"].radioButton:checked+label {
+    background-color: var(--secondaryColor);
+    border: 2px solid var(--tertiaryColor);
+}
+
+.articlePreOrder .size .selectSize .inputSize input[type="radio"].radioButton+label {
+    height: 55px;
+    border-radius: 15px;
+    border: 2px solid var(--tertiaryColor);
+
+    background-color: var(--tertiaryColor);
+    color: var(--extraBlack);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Propiétés section "QuantityAndOrder"   */
+
+.quantityAndOrder {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Propriétés du bouton de gestion de la quantité */
+
+.quantity {
+
+    width: 95%;
+    height: 50px;
+
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--tertiaryColor);
+
+    /* Ajout d'une ombre de couleur grise tout autour du container */
+    box-shadow: inset 0px 0px 15px 10px var(--dark);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* La quantité par défaut est 1 */
+.quantityAndOrder .quantity input.quantityOrdered {
+
+    width: 230px;
+    text-align: center;
+    color: var(--tertiaryColor);
+    background-color: var(--primaryColor);
+    margin: 0 10px;
+    border: none;
+}
+
+/* signe + et - */
+.decrease, .increase
+ {
+
+    background-color: var(--primaryColor);
+    background-position: center;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.decrease {
+    background-image: url('/public/images/icons8-moins-24.png');
+}
+
+.increase {
+    background-image: url('/public/images/icons8-plus-24.png');
+}
+
+
+/* Propriétés du bouton "Acheter maintenant" */
+.quantityAndOrder button.orderNow {
+    width: 95%;
+    height: 55px;
+
+    padding: 5px 20px;
+    background-color: var(--tertiaryColor);
+    border-radius: 30px;
+    border: 2px solid var(--secondaryColor);
+    /* Ajout d'une ombre de couleur grise tout autour du container */
+    /* box-shadow: inset 0px 0px 15px 10px var(--lightGrey); */
+    box-shadow: inset 0px 0px 10px 2px var(--primaryColor);
+
+    /* font-family: var(--fontWrite); */
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.quantityAndOrder button.orderNow:hover {
+
+    background-color: var(--secondaryColor);
+    border: 2px solid var(--tertiaryColor);
+}
+
+.quantityAndOrder button.orderNow:active {
+    /* au clic pour acheter, on supprime l'ombre sur le bouton  */
+    box-shadow: unset;
+
+    border: 2px solid var(--tertiaryColor);
+}
+
+/* Propriétés de l'accordéon dop down */
+.dropDownContainer
+{
+    width: 100%;
+    
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.dropDownContainer .dropDownItem
+{
+    width: 100%;
+    font-family: var(--fontWrite);
+    border-radius: 5px;
+    box-shadow: 0 0 0.5px 0.5px rgb(236, 163, 163);
+    
+}
+
+.dropDownContainer .button,
+.articleDetails
+{
+    width: 100%;
+    font-family: var(--fontWrite);
+}
+
+.dropDownContainer button
+{
+    height: 45px;
+    background-color: var(--dark);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+
+    border-radius: 5px;
+}
+
+.dropDownContainer .button span
+{
+    color: var(--tertiaryColor);
+    font-size: 16px;
+}
+
+.dropDownContainer .detail {
+    
+    padding: 0 20px;
+}
+
+.dropDownContainer .link, .articleDetails .link,
+.associationCard .link
+{
+    color: var(--secondaryColor);
+    text-decoration: underline;
+}
+
+/* Gestion ouverture et fermetures des items DropDown */
+.dropDownContainer .dropDownItem div 
+{
+    display: none;
+    /* N'affiche pas le détail de l'item */
+}
+
+.dropDownContainer .dropDownItem div.active
+{
+    display: block;
+    /* Affiche le détail de l'item au clic du bouton */
+}
+
+.articleDetails
+{  
+    height: 20px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.articleDetails img
+{
+    width:20px;
+}
+
+
+/* définition du carousel */
+
+.carousel
+{
+    width: 55%;
+    height: 50%;
+    border-radius: 25px;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide
+{
+    min-width: 100%;
+    min-height: 100%;
+    animation: slideCarousel 15s ease-in-out infinite;
+}    
+
+.slide img
+{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slideCarousel
+{
+    0%
+    {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+
+    50%
+    {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+
+    100%
+    {
+        transform: translateX(-200%);
+        -webkit-transform: translateX(-200%);
+        -moz-transform: translateX(-200%);
+        -ms-transform: translateX(-200%);
+        -o-transform: translateX(-200%);
+    }
+}
+
+/* Propriétes <section class="associationCardsContainer"> */
+.endPageContainer
+{
+    width:100%;
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    gap: 20px;
+}
+
+/* Grid qui contient les 4 cartes des associations */
+
+.associationCardContainer {
+    /* 70% de la largeur du parent */
+    width: 70%;
+
+    background-color: var(--primaryColor);
+
+    /* Active la méthode Grid */
+    display: grid;
+
+    /* Goutière de 20px entre chaque enfant */
+    gap: 10px;
+
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /*  
+        On veut créer 4 cartes par lignes de 320px minimum.
+        On a besoin de 3 gouttières de 10px pour séparer les colonnes.
+    */
+
+    margin-top:20px;
+
+    justify-content: center;
+}
+
+.associationCard {
+    /* width:25%; */
+    
+    background-color: var(--dark);
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+    gap: 20px;
+
+    padding: 30px 25px;
+
+}
+
+.associationCard .containerImg {
+    display: flex;
+    min-width: 28px;
+}
+
+.associationCard img
+{
+    width: 150px;
+    height: 150px;
+} 
+
+.associationCard h3 {
+    color: var(--secondaryColor);
+}
+
+.infosAss
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.infosPlus
+{  
+    height: 20px;
+    margin-top: 10px;
+    font-size: 1.em;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.infosPlus a
+{
+    font-family: var(--fontWrite);
+}
+.infosPlus img
+{
+    width:20px;
+}
+
+.associationCard .infosPlus link
+{
+    text-decoration: unset;
+}
+
+
+.endPageContainer .helpCardContainer
+{
+    width: 70%;
+    /* height: 305px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+    background-color: var(--secondaryColor);
+}
+
+.helpCardContainer .helpCard
+{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    padding: 35px;
+    gap: 10px;
+}
+
+.helpCard h3
+{
+    font-size: 3.5em;
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px var(--dark));
+}
+
+.helpCard .helpDetail
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.helpCard .helpDetail p
+{
+    text-align: justify;
+    filter: drop-shadow(1px 1px 1px var(--dark));
+}
+
+.helpCardContainer div
+{
+    height: 350px;
+    width: 50%;
+}
+
+.helpCardContainer img
+{
+    width: 100%;
+    height: 350px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.helpCardContainer .helpCard .helpDetail a
+{
+    font-family: var(--fontWrite);
+    font-size: 1.3em;
+    font-weight: 700;
+    filter: drop-shadow(1px 1px 1px var(--dark));
+
+    padding: 10px 15px;
+    background-color: var(--tertiaryColor);
+    border-radius: 25px;
+}
+
+.helpCardContainer .helpCard .helpDetail a:hover
+{
+    background-color: var(--dark);
+    color: var(--secondaryColor);
+}
+
+/* *******************/
+/* Gestion du Footer */
+/* ***************** */
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: var(--extraBlack);
+    margin-top: 20px;
+}
+
+.topFooter
+{
+    width: 100%;
+    height: 65%;
+    border-top: 1.5px solid var(--lightGrey);
+    border-bottom: 1.5px solid var(--lightGrey);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 20px;
+}
+
+.bottomFooter
+{
+    width: 100%;
+    height: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topFooter .lineOne 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topFooter .lineOne .shop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.topFooter .lineOne .shop h3
+{
+    color: var(--secondaryColor);
+    margin-bottom: 20px;
+}
+
+.topFooter .lineOne .ZeventLogo img
+{
+    width: 70%;
+}
+
+.topFooter .lineOne .footerCenter
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.topFooter .lineOne .footerCenter img 
+{
+    width: 17px;
+    height : 17px;
+}
+
+.topFooter .lineTwo
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}   
+    
+
+/* La balise lien qui contient le logo est plus petite que lui pour masquer la bordure  40px contre 50px */
+.topFooter .lineTwo a
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--tertiaryColor);
+}
+
+.topFooter .lineTwo img
+{ 
+    width: 50px;
+    height: 50px;
+}
+
+
+.bottomFooter
+{
+    font-family: var(--defaultFont);
+    font-size: 1em;
+}
+
+.bottomFooter .creditCard
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomFooter .creditCard img
+{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* ********************************** */
+/* Media-quieries de la page boutique */
+/* ********************************** */
+
+/* quand la largeur de l'écran est < à 380 px */
+@media all and (max-width:380px) {
+
+    /* On enlève les icônes */
+    .lineTop .navLineTopIcones {
+        display: none;
+    }
+
+    /* On affiche le menu burger  */
+    .lineTop .burgerContainer {
+        display: block;
+    }
+
+    /* On positionne le logo à gauche de l'écran */
+    .logo img {
+        position: absolute;
+        left: 10px;
+    }
+
+    /* Redimensionner navLineTop et sa liste pour qu'elle s'affiche en colonne */
+    .lineTop .navLineTop {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 168px;
+        left: 0;
+        background-color: var(--extraBlack);
+        Z-index: 3;
+
+        /* On n'affiche pas la liste du menu nav par défaut en mode mobile */
+        display: none;
+    }
+
+    .lineTop .navLineTop ul {
+        width: 100%;
+        height: 100%;
+
+        /* On passe en colonnes pour que la liste s'affiche verticalement */
+        flex-direction: column;
+
+        justify-content: space-evenly;
+    }
+
+    /* Quand on clic sur le Menu Burger on déroule la liste */
+    .lineTop .navLineTop.active {
+        display: block;
+    }
+}
+
+/* quand la largeur de l'écran est < à 650px on aligne les icônes et le panier à droite */
+@media all and (max-width:650px) {
+
+    .lineTop {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* On positionne le logo juste avant le la 1ère icône de la liste */
+    .logo img {
+        position: absolute;
+        right: 260px;
+    }
+
+}
+
+/* Quand la largeur de l'écran est > à 380px et < à 900px on remplace les noms de la barre de 
+        navigation du header par des icônes */
+@media all and (min-width:380px) and (max-width:900px) {
+
+    /* On n'affiche plus la liste de navigation avec le texte*/
+    .lineTop .navLineTop {
+        display: none;
+    }
+
+    /* on active la navbar des icônes */
+    .lineTop .navLineTopIcones {
+        display: flex;
+    }
+}

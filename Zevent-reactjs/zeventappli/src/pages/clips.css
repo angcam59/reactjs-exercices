@@ -171,12 +171,11 @@ button {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     /* bordure pour tous les enfants */
     gap: 30px;
-
 }
 
 /* Barre de sélection de la période ( "tout le week-end", "vendredi", "samedi", "dimanche") */

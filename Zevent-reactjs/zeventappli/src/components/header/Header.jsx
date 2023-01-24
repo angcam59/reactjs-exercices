@@ -10,7 +10,7 @@ function Header() {
                     <ul>
                         <li><a href="">ACCUEIL</a></li>
                         <li><a href="">LES ASSOCIATIONS</a></li>
-                        <li><a href="">LES CLIPS</a></li>
+                        <li><a href="/">LES CLIPS</a></li>
                         <li><a href="">LES STATS</a></li>
                     </ul>
                 </nav>
@@ -22,7 +22,7 @@ function Header() {
                                     alt="logo accueil"></img></a></li>
                         <li><a href=""><img src={process.env.PUBLIC_URL + "/images/icons8-organisation-50.png"}
                                     alt="logo associations"></img></a></li>
-                        <li><a href=""><img src={process.env.PUBLIC_URL + "/images/icons8-film-24.png"}
+                        <li><a href="/"><img src={process.env.PUBLIC_URL + "/images/icons8-film-24.png"}
                                      alt="logo clip"></img></a></li>
                         <li><a href=""><img src={process.env.PUBLIC_URL + "/images/icons8-nas-16.png"}
                                      alt="logo stats"></img></a></li>
