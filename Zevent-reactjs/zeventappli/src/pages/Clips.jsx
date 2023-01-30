@@ -2,28 +2,16 @@ import React from 'react'
 import './clips.css'
 
 import Header from '../components/header/Header'
+import MouseFunctions from '../components/mouseFunctions/MouseFunctions'
+import DisplayOneClip from '../components/displayOneClip/DisplayOneClip'
 
-function Clips() {
-    const [isLoaded, setLoaded] = React.useState(false)
-
-    React.useEffect(() => {
-        const baliseScript = document.createElement("script")
-        baliseScript.src = "/monscript.com/min.js"
-        baliseScript.addEventListener("load", () => setLoaded(true))
-        document.body.appendChild(baliseScript)
-    }, [])
-
-    React.useEffect(() => {
-        if (isLoaded) {
-          // ...
-        }
-      }, [isLoaded])
+function Clips() {  
 
     return (
         <>
             <div className="container">
                 <header>
-                    <Header />
+                    <Header pageName="Clips"/>
                 </header>
 
                 <main>
@@ -92,12 +80,22 @@ function Clips() {
                         </div>
 
                         <section className="containerAllClips">
-
+                            <DisplayOneClip 
+                                nbVues="1 000 000 Vues" 
+                                dateHeure = "01/01/2022 à 01:00:00"
+                                urlImg = "/images/mister-mv.webp"
+                            />
+                            <DisplayOneClip
+                                nbVues="2 000 000 Vues" 
+                                dateHeure = "10/01/2022 à 01:30:00"
+                                urlImg = "/images/mister-mv.webp"
+                            />
                         </section>
                     </section>
 
                 </main>
             </div>
+            <MouseFunctions />
         </>
     )
 }

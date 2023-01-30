@@ -13,17 +13,7 @@ function Boutique() {
                     commande</p>
             </div>
 
-            <Header />
-
-                <div className="panier">
-                    <a href="#"><img src={process.env.PUBLIC_URL + "/images/cart.svg"} alt="Logo panier"></img></a>
-                </div>
-
-                <div className="burgerContainer">
-                    <button className="burgerIcon">
-                        
-                    </button>
-                </div>
+            <Header pageName="Boutique"/>
         </header>
 
 

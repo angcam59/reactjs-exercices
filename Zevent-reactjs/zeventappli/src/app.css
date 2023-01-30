@@ -1,39 +1,4 @@
-*,
-::before,
-::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-html,
-body {
-    width: 100%;
-    /* Toute la largeur de la fenêtre */
-
-    height: 100%;
-    /* Toute la hauteur de la fenêtre */
-
-    font-family: var(--defaultFont);
-    /* Police d'écriture */
-
-}
-
-:root {
-
-    /* font-family: 'Caveat', cursive; */
-
-    --primaryColor: rgba(32, 32, 32, 1);
-    --secondaryColor: rgba(112, 208, 56, 1);
-    --tertiaryColor: rgba(255, 255, 255, 1);
-    --lightGrey: rgba(255, 255, 255, 0.2);
-    --dark: rgba(16, 16, 16, 1);
-    --extraBlack: rgba(0, 0, 0, 1);
-
-    --defaultFont: Helvetica, Arial, sans-serif;
-    --fontWrite: 'Quicksand', sans-serif;
-    --fontFamilyTitle: 'Caveat', cursive;
-}
 
 
 

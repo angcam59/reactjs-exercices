@@ -14,7 +14,7 @@ class Element {
             this.streamerNameParam = streamerName
     }
 
-    /* Méthode qui crée l'artile */
+    /* Méthode qui crée l'article */
     createClip() {
         /* Création de l'élément <article> */
         const article = document.createElement('article');

@@ -1,12 +1,22 @@
 import React from "react";
 import './header.css';
 
-function Header() {
+function Header(props) {
+    const { pageName } = props
+    const element = document.getElementById("monPanier");
+  
+    // if (pageName === "Boutique") {
+    //     element.className.add("active");
+    // }
+    // else {
+    //     element.className.remove("active");
+    // }
+
     return (
         <>
-            <div class="lineTop">
+            <div className="lineTop">
 
-                <nav class="navLineTop">
+                <nav className="navLineTop">
                     <ul>
                         <li><a href="">ACCUEIL</a></li>
                         <li><a href="">LES ASSOCIATIONS</a></li>
@@ -15,7 +25,7 @@ function Header() {
                     </ul>
                 </nav>
 
-                <nav class="navLineTopIcones">
+                <nav className="navLineTopIcones">
                     
                     <ul>
                         <li><a href=""><img src={process.env.PUBLIC_URL + "/images/icons8-page-d’accueil-64.png"}
@@ -30,18 +40,21 @@ function Header() {
 
                 </nav>
 
+                <div class="panier" id="monPanier">
+                    <a href="#"><img src={process.env.PUBLIC_URL + "/images/cart.svg"} alt="Logo panier"></img></a>
+                </div>
 
-                <div class="burgerContainer">
-                    <button class="burgerIcon">
+                <div className="burgerContainer">
+                    <button className="burgerIcon">
                        
                     </button>
                 </div>
             </div>
 
-            <div class="logo">
+            <div className="logo">
                 <img src={process.env.PUBLIC_URL + "/images/zevent-logo.webp"} alt="Logo ZEvent"></img>
             </div>
-            <nav class="navLineBottom">
+            <nav className="navLineBottom">
                 <ul>
                     <li><a href=""><img src={process.env.PUBLIC_URL + "/images/square-twitter.svg"} 
                                 alt="Logo twitter"></img></a></li>

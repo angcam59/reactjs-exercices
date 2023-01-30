@@ -282,14 +282,14 @@ button {
 }
 
 
-/* Définition des propriétés d'un article ( = 1 clip ) */
+/* Définition des propriétés d'un .articleClip ( = 1 clip ) */
 
-article {
+.articleClip {
     width: 100%;
 
     background-color: var(--dark);
 
-    /* On définit la hauteur d'un article */
+    /* On définit la hauteur d'un .articleClip */
     height: 370px;
 
     display: flex;
@@ -302,31 +302,31 @@ article {
     font-size: 0.75em;
 }
 
-article:hover {
+.articleClip:hover {
     background-color: var(--secondaryColor);
 
     /* Ajout d'une ombre de couleur verte tout autour du container */
     box-shadow: 0px 0px 5px 1px var(--secondaryColor);
 }
 
-article a {
+.articleClip a {
     width: 100%;
     height: 100%;
 
     color: var(--tertiaryColor);
 }
 
-article a:hover {
+.articleClip a:hover {
     color: var(--dark);
 }
 
-article video {
+.articleClip video {
     width: 100%;
     height: 200px;
     border-radius: 20px;
 }
 
-article .infos {
+.articleClip .infos {
     margin-top: 15px;
 
     display: flex;
@@ -338,13 +338,13 @@ article .infos {
     gap: 10px;
 }
 
-article .infos .nbView,
-article .infos .dateHour {
+.articleClip .infos .nbView,
+.articleClip .infos .dateHour {
     padding: 5px;
     border: 1px solid;
 }
 
-article .videoTitle {
+.articleClip .videoTitle {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -353,20 +353,20 @@ article .videoTitle {
     padding: 0 15px;
 }
 
-article .videoTitle img {
+.articleClip .videoTitle img {
     width: 50px;
     height: 50px;
     border-radius: 5px;
 }
 
-article .videoTitle h4 {
+.articleClip .videoTitle h4 {
     
     font-family: var(--fontFamilyTitle);
     font-size: 1.6em;
     
 }
 
-article .streamerName {
+.articleClip .streamerName {
     margin-top: 15px;
     padding: 0 15px;
 
