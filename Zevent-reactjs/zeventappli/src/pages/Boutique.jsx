@@ -237,7 +237,7 @@ function Boutique() {
                             <div className="detail item3">
                                 <br></br>Impression à plat directement Dibond(fines plaques d'aluminium) avec des encres 100%
                                 écologiques et
-                                en haute définition. Cette oeuvre est fabriquée avec 2 acrroches aux dos pour pouvoir
+                                en haute définition. Cette oeuvre est fabriquée avec 2 accroches aux dos pour pouvoir
                                 l'exposer
                                 directement sur son mur.<br></br><br></br>
                             </div>

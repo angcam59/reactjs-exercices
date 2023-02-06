@@ -1,17 +1,11 @@
 import React from "react";
 import './header.css';
 
-function Header(props) {
-    const { pageName } = props
-    const element = document.getElementById("monPanier");
-  
-    // if (pageName === "Boutique") {
-    //     element.className.add("active");
-    // }
-    // else {
-    //     element.className.remove("active");
-    // }
 
+function Header(props) {
+    
+    const { pageName } = props
+    
     return (
         <>
             <div className="lineTop">
@@ -40,10 +34,13 @@ function Header(props) {
 
                 </nav>
 
-                <div class="panier" id="monPanier">
-                    <a href="#"><img src={process.env.PUBLIC_URL + "/images/cart.svg"} alt="Logo panier"></img></a>
-                </div>
-
+                {/* On affiche le panier uniquement sur la page boutique */}
+                { pageName == "Boutique" &&
+                    <div className="panier" id="monPanier">
+                        <a href=""><img src={process.env.PUBLIC_URL + "/images/cart.svg"} alt="Logo panier"></img></a>
+                    </div>
+                }
+    
                 <div className="burgerContainer">
                     <button className="burgerIcon">
                        
@@ -51,9 +48,10 @@ function Header(props) {
                 </div>
             </div>
 
-            <div className="logo">
+            <div className ="logo">
                 <img src={process.env.PUBLIC_URL + "/images/zevent-logo.webp"} alt="Logo ZEvent"></img>
             </div>
+            
             <nav className="navLineBottom">
                 <ul>
                     <li><a href=""><img src={process.env.PUBLIC_URL + "/images/square-twitter.svg"} 

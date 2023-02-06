@@ -3,7 +3,7 @@ import './displayOneClip.css';
 
 function DisplayOneClip(props) {
     
-    const { nbVues, dateHeure, urlImg } = props
+    const { nbVues, dateHeure, urlImg, videoTitle } = props
 
     return (
         <>
@@ -23,7 +23,7 @@ function DisplayOneClip(props) {
                     </div>
                     <div className="videoTitle">
                         <img src={process.env.PUBLIC_URL + urlImg} alt="image mister-mv" />
-                        <h4>bigard + alien = ALLAALLALALA (+flop d'étoiles)</h4>
+                        <h4>{videoTitle}</h4>
                     </div>
                     <div className="streamerName">
                         <p>Nom Streamer - Activité</p>

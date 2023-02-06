@@ -16,7 +16,7 @@
     background-color: var(--primaryColor);
 }
 
-main {
+.container main {
     width: 100%;
 
     /* Pas de hauteur maximum pour que la sibeBar reste en place avec sticky */
@@ -514,7 +514,7 @@ button {
         align-items: center;
     }
 
-    /* On positionne le logo juste avant le la 1ère icône de la liste */
+    /* On positionne le logo juste avant la 1ère icône de la liste */
     .logo img {
         position: absolute;
         right: 200px;
